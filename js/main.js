@@ -59,13 +59,14 @@ function init() {
 
 }
 
-function onDocumentClick() {//shuffles the phrases to alert a random phrase on each click			
+function onDocumentClick() {//shuffles the phrases to alert a random phrase on each click
 
 	shuffleArray(phrasesArray);
 	alert(phrasesArray[0]);
 
 }
 
+//taken from http://stackoverflow.com/a/12646864
 function shuffleArray(array) {
     for (var i = array.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
